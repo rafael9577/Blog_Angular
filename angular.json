@@ -65,6 +65,9 @@
               "buildTarget": "AngularBlog:build:development"
             }
           },
+          "options": {
+            "watch": true
+          },
           "defaultConfiguration": "development"
         },
         "extract-i18n": {
@@ -92,5 +95,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }
