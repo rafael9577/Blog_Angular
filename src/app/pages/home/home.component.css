@@ -5,7 +5,11 @@
    justify-content: center;
 
 }
-
-header {
-   margin-top: 10px;
+.container_title > h1 {
+   font-size: 100px;
+   display: flex;
+   justify-content: center;
+}
+.container_title > hr {
+   margin: 10px
 }
