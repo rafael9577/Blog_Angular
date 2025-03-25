@@ -1,17 +1,6 @@
-
-.menu-bar_container > ul{
-   display: flex;
-   flex-direction: row-reverse;
+.menu-bar_container{
+   width: 81%;
+   justify-self: center;
 }
-.menu-bar_container > ul > li{
-   align-items: center;
-   display: flex;
 
-   margin-right: 30px;
-   list-style: none;
-
-}
-.menu-bar_container > ul > li > a{
-   margin-left: 10px;
-}
 

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute, RouterModule } from '@angular/router';
-import { fakeNews } from '../../../data/data';
+import { fakeNews } from '../../../assets/data/data';
 
 @Component({
    selector: 'app-content',

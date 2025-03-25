@@ -2,13 +2,13 @@ import { Component } from '@angular/core';
 import { BigCardComponent } from "../../components/big-card/big-card.component";
 import { SmalCardComponent } from "../../components/smal-card/smal-card.component";
 import { RouterModule } from '@angular/router';
-import { fakeNews } from '../../../data/data';
+import { fakeNews } from '../../../assets/data/data';
 import { CommonModule } from '@angular/common';
 
 
 @Component({
   selector: 'app-home',
-  imports: [BigCardComponent, SmalCardComponent, RouterModule, CommonModule],
+  imports: [RouterModule, CommonModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })

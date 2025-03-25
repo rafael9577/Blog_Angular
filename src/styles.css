@@ -3,10 +3,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #111111;
-  color: white;
+  background-color: #ada3a3;
+  color: black;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 a{
   text-decoration: none;
+}
+
+hr {
+   border: 1px solid black;
 }

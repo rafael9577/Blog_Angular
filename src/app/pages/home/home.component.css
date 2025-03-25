@@ -1,15 +1,22 @@
-.articles {
-   display: flex;
-   flex-direction: row;
 
-   justify-content: center;
-
-}
-.container_title > h1 {
-   font-size: 100px;
+.container_home{
    display: flex;
-   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+   max-width: 100%;
+   overflow-x: hidden;
 }
-.container_title > hr {
-   margin: 10px
+
+.mainNews{
+   width: 80%;
+   word-wrap: break-word;
+   overflow-x: hidden;
 }
+
+.outherNews{
+   width: 80%;
+   word-wrap: break-word;
+   overflow-x: hidden;
+}
+
+

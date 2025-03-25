@@ -1,20 +1,12 @@
 <div class="container_home">
-   <div class="container_title">
-      <hr />
-      <h1>Rafael Blog</h1>
-      <hr />
+   <div class="mainNews">
+      <hr>
+      <h1>featured article</h1>
+      <p>aaaaa</p>
    </div>
-   <div class="articles">
-      <div class="articles_main">
-         <app-big-card [id]="mainCard.id" [cardTitle]="mainCard.title" [cardDescription]="mainCard.description"
-            [photoCover]="mainCard.imageURL" />
-      </div>
-      <div class="articles_outhers">
-         <app-smal-card *ngFor="let smallCard of otherCards"
-            [id]="smallCard.id"
-            [Title]="smallCard.title"
-            [imageURL]="smallCard.imageURL">
-         </app-smal-card>
 
-      </div>
+   <div class="outherNews">
+      <hr class="division" >
+      <h1>other articles</h1>
    </div>
+</div>
