@@ -29,8 +29,5 @@ export class ContentComponent {
       this.contentTitle = result.title;
       this.contentDescription = result.description;
       this.photoCover = result.imageURL;
-
-      console.log(result);
-
    }
 }

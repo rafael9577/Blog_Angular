@@ -1,1 +1,17 @@
-<p>new-articles works!</p>
+<div class="content">
+   <div class="big_article">
+      <a [routerLink]="['notice',bigNotice.id]">
+         <img src="{{bigNotice.imageURL}}" alt="MainNotice" class="big_image">
+         <h1 class="title">{{bigNotice.title}} </h1>
+      </a>
+      <p class="description">{{bigNotice.description}}</p>
+   </div>
+
+   <hr>
+   <div class="small_articles">
+      <a *ngFor="let article of smalNotice" [routerLink]="['notice', article.id]" class="small_article">
+         <img src="{{article.imageURL}}" alt="MainNotice" class="big_image">
+         <h2 class="title">{{article.title}} </h2>
+      </a>
+   </div>
+</div>

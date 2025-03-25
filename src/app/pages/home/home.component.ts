@@ -1,24 +1,23 @@
 import { Component } from '@angular/core';
-import { BigCardComponent } from "../../components/big-card/big-card.component";
-import { SmalCardComponent } from "../../components/smal-card/smal-card.component";
 import { RouterModule } from '@angular/router';
 import { fakeNews } from '../../../assets/data/data';
 import { CommonModule } from '@angular/common';
+import { NewArticlesComponent } from "../../components/new-articles/new-articles.component";
+import { OldArticlesComponent } from "../../components/old-articles/old-articles.component";
 
 
 @Component({
   selector: 'app-home',
-  imports: [RouterModule, CommonModule],
+  imports: [RouterModule, CommonModule, NewArticlesComponent, OldArticlesComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
    noticias = fakeNews;
-   mainCard= this.noticias[0];
-   otherCards = this.noticias.slice(1);
+   mainCard= this.noticias.slice(0,4);
+   otherCards = this.noticias.slice(4);
 
    constructor() {
-     console.log(this.otherCards);
    }
 
 }

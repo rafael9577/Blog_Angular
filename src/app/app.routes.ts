@@ -8,7 +8,7 @@ export const routes: Routes = [
       component: HomeComponent
    },
    {
-      path: 'content/:id',
+      path: 'notice/:id',
       component: ContentComponent
    }
 ];

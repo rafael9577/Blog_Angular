@@ -1,11 +1,23 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { RouterModule } from '@angular/router';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-new-articles',
-  imports: [],
   templateUrl: './new-articles.component.html',
-  styleUrl: './new-articles.component.css'
+  styleUrl: './new-articles.component.css',
+  imports: [RouterModule, CommonModule]
 })
-export class NewArticlesComponent {
+export class NewArticlesComponent implements OnInit{
+   @Input()
+   articles: any
+   bigNotice: any
+   smalNotice: any
 
+   constructor(){
+   }
+   ngOnInit(): void {
+      this.bigNotice = this.articles[0]
+      this.smalNotice = this.articles.slice(1)
+   }
 }
