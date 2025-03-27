@@ -17,13 +17,17 @@
       padding-left: 0 !important;
    }
 }
-
 .big_article {
    width: 100%;
    padding-right: 35px; ;
 }
-.big_article > a > img {
+.big_image:active{
+   position: relative;
+   top: 2px;
+}
+.big_image {
    width: 100%;
+   box-shadow: 6px 8px gray;
 }
 
 .description {
@@ -47,10 +51,10 @@ hr{
    align-items: center;
 }
 .small_article > img {
-   width: 150px;
+   width: 170px;
+   box-shadow: 4px 5px gray;
 }
 
-.small_article > h2 {
-   font-size: medium;
+.title {
    margin-left: 5px;
 }

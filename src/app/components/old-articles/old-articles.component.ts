@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { notice } from '../notices.model';
 
 @Component({
    selector: 'app-old-articles',
@@ -10,26 +11,26 @@ import { RouterModule } from '@angular/router';
 })
 export class OldArticlesComponent {
    @Input()
-   articles: any[] = []
+   articles: notice[] = []
 
-    currentPage = 0;
-    itemsPerPage = 3;
+   currentPage = 0;
+   itemsPerPage = 3;
 
-    get paginatedItems() {
+   get paginatedItems() {
       const start = this.currentPage * this.itemsPerPage;
       const end = start + this.itemsPerPage;
       return this.articles.slice(start, end);
-    }
+   }
 
-    nextPage() {
+   nextPage() {
       if ((this.currentPage + 1) * this.itemsPerPage < this.articles.length) {
-        this.currentPage++;
+         this.currentPage++;
       }
-    }
+   }
 
-    prevPage() {
+   prevPage() {
       if (this.currentPage > 0) {
-        this.currentPage--;
+         this.currentPage--;
       }
-    }
+   }
 }

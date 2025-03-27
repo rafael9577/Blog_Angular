@@ -12,6 +12,7 @@ export class ContentComponent {
    photoCover: string = '';
    contentTitle: string = '';
    contentDescription: string = '';
+   contentText: string | undefined = '';
    private id: string | null = '';
 
    constructor(private router: ActivatedRoute) {
@@ -25,9 +26,10 @@ export class ContentComponent {
       this.setValuesToComponent(this.id);
    }
    setValuesToComponent(id: string| null) {
-      const result = fakeNews.filter((item) => item.id === id)[0];
+      const result = fakeNews.filter((item) => item.id === Number(id))[0];
       this.contentTitle = result.title;
       this.contentDescription = result.description;
       this.photoCover = result.imageURL;
+      this.contentText = result.text;
    }
 }

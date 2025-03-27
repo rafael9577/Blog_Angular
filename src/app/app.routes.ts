@@ -1,14 +1,17 @@
 import { Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
-import { ContentComponent } from './pages/content/content.component';
 
 export const routes: Routes = [
    {
       path: '',
-      component: HomeComponent
+      loadComponent: () => import('./pages/home/home.component').then(m => m.HomeComponent)
    },
    {
       path: 'notice/:id',
-      component: ContentComponent
+      loadComponent: () => import('./pages/content/content.component').then(m => m.ContentComponent)
+   },
+   {
+      path: '**', redirectTo: '' , component: HomeComponent, pathMatch:  'full'
    }
 ];
+export class AppRoutingModule { }

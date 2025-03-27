@@ -1,4 +1,5 @@
 .items{
+   margin-top: 15px;
    margin-right: 56px;
 }
 
@@ -8,9 +9,18 @@
 }
 
 .item > img{
-   height: 120px;
+   height: 150px;
+   box-shadow: 5px 8px gray;
+}
+.item > img:active{
+   position: relative;
+   top: 2px;
 }
 
+.title{
+   margin-top: 10px;
+   font-size: 25px;
+}
 .description{
    color: #5c5a5a;
 }
@@ -18,7 +28,8 @@
 .item-container{
    display: flex;
    flex-direction: row;
-   justify-content: center;
+   justify-content: baseline;
+   overflow-x: auto;
 }
 
 .pagination-controls{
@@ -28,4 +39,12 @@
 .pagination-controls > button{
    margin-right: 10px;
    padding: 2px;
+   border: 0px;
 }
+
+.pagination-controls > button:active{
+   position: relative;
+   top: 2px;
+}
+
+

@@ -5,7 +5,6 @@ import { CommonModule } from '@angular/common';
 import { NewArticlesComponent } from "../../components/new-articles/new-articles.component";
 import { OldArticlesComponent } from "../../components/old-articles/old-articles.component";
 
-
 @Component({
   selector: 'app-home',
   imports: [RouterModule, CommonModule, NewArticlesComponent, OldArticlesComponent],
